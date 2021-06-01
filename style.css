@@ -1,0 +1,341 @@
+*{
+    margin:0; padding:0; box-sizing: border-box;
+}
+body{
+    background-image: url('jarvis.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+h1{color:#00ffff; text-align: center; font-size: 3rem;}
+
+ .container {
+  position: absolute;
+  top:58%;
+  left:53%;
+  transform: translate(-50%,-50%);
+  padding: 30px 50px;
+}
+
+#search-form {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+#search-form input {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 10px 15px;
+  background:none;
+  border: none;
+  outline:none;
+  box-shadow: 5px 5px 5px #00ffff;
+  color:white;
+  text-transform: capitalize;
+}
+#search-form button {
+  position: absolute;
+  top: 0;
+  bottom:0;
+  right:0;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 3rem;
+  text-align: center;
+  font-size: 1.75rem;
+  cursor: pointer;
+  color: #88f30e;
+}
+.info {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+#clock{
+    position: absolute;
+    top:10%;
+    right:0;
+    font-size: 50px;
+    padding: 10px;
+    border-radius:-30%;
+    box-shadow:0 3px 5px #00ffff;
+    color:#00ffff;
+  }
+  .calender{
+    position: relative;
+    left:20px;
+    transform: translate(15%,130%);
+    box-shadow: 0 5px 10px #00ffff;
+    width:200px;
+    text-align: center;
+    border-radius: 999px;
+    overflow: hidden;
+}
+.calender #month{
+    position: relative;
+    padding: 5px 10px;
+    background:transparent;
+    color:#00ffff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.calender #week{
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 350;
+    color:grey;
+}
+.calender #todayDate{
+    margin-top: 0px;
+    font-size: 5rem;
+    font-weight: 350;
+    color:#11f5f5;
+    font-weight: 700;
+    line-height: 1em;
+}
+.calender #year{
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    font-weight:500;
+    color:grey;
+}
+.location,.temperature{
+    display: flex;
+    height:30vh;
+    width:50%;
+    justify-content:space-evenly;
+    align-items: center;
+    font-size: 40px;
+}
+.temperature{
+    display: flex;
+    flex-direction: column;
+    color: #00ffff;
+}
+.degree-section{
+    display: flex;
+    cursor: pointer;
+}
+.degree-section span{
+    position: absolute;
+    bottom:15%;
+    right:11%;
+    margin:10px;
+    color:#00ffff;
+}
+.degree-section h2{
+    color:#00ffff;
+    position: absolute;
+    bottom:15%;
+    right:14%;
+    font-size: 2.7rem;
+}
+.temperature-description{
+    font-size: 3rem;
+    text-transform: capitalize;
+    position: absolute;
+    bottom:8%;
+    right: 70px;
+}
+#temp-icon{
+    position: absolute;
+    bottom:29%;
+    right: 100px;
+    width:150px;
+}
+.location-timezone{
+    position: absolute;
+    bottom:24%;
+    right:7%;
+    font-size: 35px;
+    color:#00ffff;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    box-shadow: 5px 5px 20px #00ffff;
+    position: absolute;
+    top:24%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+.top{
+    width: 100%;
+    height: 80px;
+    background:none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.top h1{
+    margin: 0;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-family: sans-serif;
+}
+.mid{
+    width: 100%;
+    height: 140px;
+    background:transparent;
+}
+.mid .chat{
+    width: 100%;
+}
+.mid .chat h2{
+    margin: 0;
+    font-size: 30px;
+    color: #00ffff;
+    padding:30px 20px;
+    text-align: center;
+}
+.mid .chat p{
+    margin: 0;
+    height: 30px;
+    font-size: 28px;
+    color: greenyellow;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+#chatbot{
+    height:100%;
+    width: 300px;
+    overflow: hidden;
+}
+#userBox{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    padding-left: 30px;
+    padding-top:0;
+    font-family: monospace;
+    font-size: 30px;
+    background:#00ffff;
+}
+
+
+.main {
+    width: 70%;
+    margin: 5% auto;
+  }
+  #level{
+      position: absolute;
+      top:20%;
+      left: 40%;
+  }
+
+   
+/* 
+  .main-div{
+    margin:10px;
+} */
+/* .music-div{
+    position: absolute;
+    top:5%;
+    left:5%;
+    width:250px;
+    height:250px;
+    background-color:transparent;
+    border-radius:10px;
+    box-shadow: 0 5px 10px #00ffff;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    color: #00ffff;
+}
+h3{
+    text-transform: uppercase;
+    text-align: center;
+    color:white;
+    padding-bottom: 4px;
+    letter-spacing: 0.5rem;
+    word-spacing: 1rem;
+}
+.img-container{
+    width:120px;
+    height:120px;
+    margin:auto;
+}
+.img-container img{
+    object-fit:cover;
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    box-shadow: 0 3px 5px orange;
+}
+.arrow{
+    /* padding-top: 1rem; */
+    /* display:flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.arrow .fa-play{
+    width:2rem;
+    height:2rem;
+    background-color:black;
+    color:white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    box-shadow: 0 3px 5px #00ffff;
+}
+.arrow .fa-play:hover{
+    background-color: #fff;
+    color:black;
+}
+#prev{
+    color:white;
+}
+#next{
+    color: white;
+}
+.arrow .fa-backward:hover,.arrow .fa-forward:hover{
+color: grey;
+}
+.progressbar_container{
+    width:100%;
+    height:auto;
+    padding:3px;
+    margin-top:5px;
+}
+.progress_div{
+    width:100%;
+    height:0.5rem;
+    box-shadow:0 1px 2px rgba(0,0,0,0.07) , 0 2px 4px rgba(0,0,0,0.07) , 0 4px 8px rgba(0,0,0,0.07),
+               0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07),0 32px 64px rgba(0,0,0,0.07);
+   border-radius: 4rem;
+   position: relative;
+   margin-top: 0.4rem;
+   /* transition:width 1s linear; */
+   /* cursor: pointer;
+   appearance: none;
+}
+.progress_duration_meter{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7rem;
+}
+.progress{
+    position: absolute;
+    top:0;
+    left:0;
+    width:0%;
+    height:100%;
+    background-color: black;
+    border-radius: 4rem;
+    /* transition:width 1s linear;}*/
